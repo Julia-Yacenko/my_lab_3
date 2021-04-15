@@ -1,0 +1,8 @@
+all: main.o class.o
+	g++ main.o class.o -o lab1
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+class.o: class.cpp
+	g++ -c class.cpp
