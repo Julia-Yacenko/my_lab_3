@@ -36,5 +36,6 @@ public:
 	void find1(int a, bakery* array);
 	void find2(int a, bakery* array);
 	void find3(int a, bakery* array);
+	void edit(bakery* array);
 };
 #endif // CLASSES_H

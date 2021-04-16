@@ -116,6 +116,23 @@ void Menu::find3(int a, bakery* array){
                 }
         }
 }
+void Menu::edit(bakery* array){
+	int w;
+	cout << "Введите номер изделия, которое нужно редактировать" << endl;
+	cin >> w;
+	cout << "Введите новое название изделия" << endl;
+        string z;
+        cin >> z;
+        array[w-1].setName(z);
+        cout << "Введите новую массу изделия в граммах" << endl;
+        int m;
+        cin >> m;
+        array[w-1].setWeight(m);
+        cout << "Введите новую цену изделия в рублях" << endl;
+        int t;
+        cin >> t;
+        array[w-1].setPrice(t);
+}
 
 void Menu::SetN(int a){
 	n = a;
@@ -123,6 +140,7 @@ void Menu::SetN(int a){
 int Menu::GetN(){
 	return n;
 }
+
 
 
 
